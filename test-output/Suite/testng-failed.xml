@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LoginDD(failed)">
+    <classes>
+      <class name="testCases.TC001_Category">
+        <methods>
+          <include name="setUP"/>
+          <include name="tearDown"/>
+          <include name="test_DeleteCategory"/>
+        </methods>
+      </class> <!-- testCases.TC001_Category -->
+    </classes>
+  </test> <!-- LoginDD(failed) -->
+</suite> <!-- Failed suite [Suite] -->
