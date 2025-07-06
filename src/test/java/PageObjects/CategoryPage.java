@@ -40,13 +40,13 @@ public class CategoryPage extends BasePage {
 
 	public void CategoryNameVal(String catName) throws InterruptedException {
 		categoryName = catName;
-		CategoryName.sendKeys(catName);
+		CategoryName.sendKeys(catName.toLowerCase());
 		Thread.sleep(2000);
 	}
 
 	public void CategoryDescVal(String catDescc) throws InterruptedException {
 		categoryDesc=catDescc;
-		CategoryDesc.sendKeys(catDescc);
+		CategoryDesc.sendKeys(catDescc.toLowerCase());
 		Thread.sleep(2000);
 	}
 
@@ -58,7 +58,7 @@ public class CategoryPage extends BasePage {
 		List<WebElement> allOptions = dropdown.getOptions();
 		for (WebElement option : allOptions) {
 //			System.out.println(option.getText());
-			if (option.getText().equalsIgnoreCase(dropdownVal)) {
+			if (option.getText().equalsIgnoreCase(dropdownVal.toLowerCase())) {
 				dropdown.selectByVisibleText(dropdownVal);
 			}
 		}
